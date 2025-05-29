@@ -70,14 +70,14 @@ public class Order {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Order moment: ");
-        sb.append(sdf.format(moment)).append("\n");
+        sb.append(sdf.format(moment) + "\n");
         sb.append("Order status: ");
-        sb.append(status).append("\n");
+        sb.append(status + "\n");
         sb.append("Client: ");
-        sb.append(client).append("\n");
+        sb.append(client + "\n");
         sb.append("Order items:\n");
         for (OrderItem item : orderItems) {
-            sb.append(item).append("\n");
+            sb.append(item + "\n");
         }
         sb.append("Total price: $");
         sb.append(String.format("%.2f", total()));

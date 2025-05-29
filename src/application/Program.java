@@ -44,9 +44,9 @@ public class Program {
             System.out.println("Enter #" + i + " item data:");
             System.out.print("Product name: ");
             sc.next();
-            String p_name = sc.next();
-            System.out.println("Product price: ");
-            Double price = sc.nextDouble();
+            String p_name = sc.nextLine();
+            System.out.print("Product price: ");
+            double price = sc.nextDouble();
 
             Product product = new Product(p_name, price);
 
